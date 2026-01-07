@@ -67,10 +67,6 @@ npm run dev
 ## 📸 Screenshots
 
 ### Desktop View
-![Default UI, with a transaction hash pasted](frontend/assets/screenshots/screenshot1.png)
-![Transaction detected and tracked](frontend/assets/screenshots/screenshot2.png)
-![Enough block confirmations reached](frontend/assets/screenshots/screenshot3.png)
-
-
-### Mobile Responsive View
-![Transaction Tracker Mobile](frontend/assets/screenshots/mobile-view.png)
+![Default UI, with a transaction hash pasted](frontend/src/assets/screenshots/screenshot1.png)
+![Transaction detected and tracked](frontend/src/assets/screenshots/screenshot2.png)
+![Enough block confirmations reached](frontend/src/assets/screenshots/screenshot3.png)
