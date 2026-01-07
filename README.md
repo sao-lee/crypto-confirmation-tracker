@@ -2,17 +2,17 @@
 A robust, real-time Ethereum monitoring tool that tracks transaction confirmations with high-precision status updates and dynamic ETA calculations.
 
 ## Key Features
-Real-Time Monitoring: Automated polling every 6 seconds to capture the fastest available blockchain updates.
+1. Real-Time Monitoring: Automated polling every 6 seconds to capture the fastest available blockchain updates.
 
-1. High Water Mark Logic: Custom state-management logic that handles "out-of-sync" blockchain nodes, ensuring the UI never flickers or jumps backward. (Needed because not all nodes that are being called via Etherscan are up to date...)
+2. High Water Mark Logic: Custom state-management logic that handles "out-of-sync" blockchain nodes, ensuring the UI never flickers or jumps backward. (Needed because not all nodes that are being called via Etherscan are up to date...)
 
-2. Cache-Busting Architecture: Implements unique request signatures to bypass browser caching (304 Not Modified) for 100% data freshness.
+3. Cache-Busting Architecture: Implements unique request signatures to bypass browser caching (304 Not Modified) for 100% data freshness.
 
-3. Dynamic ETA: Real-time calculation of remaining time based on average Ethereum block intervals (~12s).
+4. Dynamic ETA: Real-time calculation of remaining time based on average Ethereum block intervals (~12s).
 
-4. UI: Features a smooth-transition progress meter and detailed confirmation stats.
+5. UI: Features a smooth-transition progress meter and detailed confirmation stats.
 
-## 🛠️Technical Implementation
+## 🛠️ Technical Implementation
 Distributed System Consistency
 One of the primary challenges was handling Etherscan's load-balanced node architecture. Occasionally, an API request would hit a "lagging" node, causing the confirmation count to temporarily drop.
 
@@ -34,7 +34,7 @@ git clone https://github.com/sao-lee/crypto-confirmation-tracker.git
 
 2. Setup Backend
 cd backend
-# Create a .env file with your ETHERSCAN_API_KEY
+#Create a .env file with your ETHERSCAN_API_KEY
 npm install
 npm run dev
 
@@ -42,4 +42,3 @@ npm run dev
 cd ../frontend
 npm install
 npm run dev
-
