@@ -67,6 +67,6 @@ npm run dev
 ## 📸 Screenshots
 
 ### Desktop View
-![Default UI, with a transaction hash pasted](frontend/src/assets/screenshots/screenshot1.png)
-![Transaction detected and tracked](frontend/src/assets/screenshots/screenshot2.png)
-![Enough block confirmations reached](frontend/src/assets/screenshots/screenshot3.png)
+<img src="frontend/src/assets/screenshots/screenshot1.png" width="200" alt="Transaction pasted">
+<img src="frontend/src/assets/screenshots/screenshot2.png" width="200" alt="Transaction tracked">
+<img src="frontend/src/assets/screenshots/screenshot3.png" width="200" alt="Transaction confirmed">
