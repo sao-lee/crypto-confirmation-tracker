@@ -28,17 +28,18 @@ To ensure the application remains within the Etherscan Free Tier limits while ma
 
 Blockchain API: Etherscan (Proxy & RPC modules)
 
-🔧 Installation
+## 🔧 Installation
 1. Clone the repo using this command in your terminal:
 git clone https://github.com/sao-lee/crypto-confirmation-tracker.git
 
 2. Setup Backend
-cd backend
-#Create a .env file with your ETHERSCAN_API_KEY
-npm install
-npm run dev
+- cd backend
+- Create an .env file with your ETHERSCAN_API_KEY
+⋅⋅⋅⋅*
+- npm install
+- npm run dev
 
 3. Setup Frontend
-cd ../frontend
-npm install
-npm run dev
+- cd ../frontend
+- npm install
+- npm run dev
