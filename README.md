@@ -37,13 +37,13 @@ Blockchain API: [Etherscan](https://etherscan.io/myaccount) (Proxy & RPC modules
 git clone https://github.com/sao-lee/crypto-confirmation-tracker.git
 
 2. Setup Backend
-- cd backend
-- cp .env.example .env  # Copies the template to a real .env file
-- npm install
-- Note: Open .env and paste your Etherscan API key before running the next command
-- npm run dev
+- **cd ../backend** _(changes the directory to the "backend" folder. You must be in this folder and then move to next steps)_
+- **cp .env.example .env**  _(Copies the template to a real .env file. This is where you pass your API key that you get from Etherscan)_
+- **npm install** 
+- **Open the .env file and paste your Etherscan API key before running the next command**
+- **npm run dev**
 
 3. Setup Frontend
-- cd ../frontend
-- npm install
-- npm run dev
+- **cd ../frontend**
+- **npm install**
+- **npm run dev**
