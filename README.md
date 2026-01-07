@@ -14,7 +14,6 @@ A robust, real-time Ethereum monitoring tool that tracks transaction confirmatio
 
 ## 🛠️ Technical Implementation
 
-
 **Distributed System Consistency**
 
 One of the primary challenges was handling Etherscan's load-balanced node architecture. Occasionally (or more precisely - often), an API request would hit a "lagging" node, causing the confirmation count to temporarily drop.
@@ -58,9 +57,20 @@ npm install
 npm run dev
 ```
 
-3. Setup Frontend
+### 3. Setup Frontend
 ```bash
 cd ../frontend
 npm install
 npm run dev
 ```
+
+## 📸 Screenshots
+
+### Desktop View
+![Default UI, with a transaction hash pasted](frontend/assets/screenshots/screenshot1.png)
+![Transaction detected and tracked](frontend/assets/screenshots/screenshot2.png)
+![Enough block confirmations reached](frontend/assets/screenshots/screenshot3.png)
+
+
+### Mobile Responsive View
+![Transaction Tracker Mobile](frontend/assets/screenshots/mobile-view.png)
