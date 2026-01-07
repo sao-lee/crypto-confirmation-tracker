@@ -35,7 +35,7 @@ git clone https://github.com/sao-lee/crypto-confirmation-tracker.git
 2. Setup Backend
 - cd backend
 - Create an .env file with your ETHERSCAN_API_KEY
-⋅⋅⋅⋅*
+⋅⋅⋅⋅* test
 - npm install
 - npm run dev
 
