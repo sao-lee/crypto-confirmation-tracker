@@ -65,8 +65,8 @@ npm run dev
 ```
 
 ## 📸 Screenshots
-
-### Desktop View
+<p align="center">
 <img src="frontend/src/assets/screenshots/screenshot1.png" width="200" alt="Transaction pasted">
 <img src="frontend/src/assets/screenshots/screenshot2.png" width="200" alt="Transaction tracked">
 <img src="frontend/src/assets/screenshots/screenshot3.png" width="200" alt="Transaction confirmed">
+</p>
