@@ -1,18 +1,18 @@
-Ethereum Transaction Confirmation Tracker
+# Ethereum Transaction Confirmation Tracker
 A robust, real-time Ethereum monitoring tool that tracks transaction confirmations with high-precision status updates and dynamic ETA calculations.
 
-🚀 Key Features
+## Key Features
 Real-Time Monitoring: Automated polling every 6 seconds to capture the fastest available blockchain updates.
 
-High Water Mark Logic: Custom state-management logic that handles "out-of-sync" blockchain nodes, ensuring the UI never flickers or jumps backward.
+1. High Water Mark Logic: Custom state-management logic that handles "out-of-sync" blockchain nodes, ensuring the UI never flickers or jumps backward. (Needed because not all nodes that are being called via Etherscan are up to date...)
 
-Cache-Busting Architecture: Implements unique request signatures to bypass browser caching (304 Not Modified) for 100% data freshness.
+2. Cache-Busting Architecture: Implements unique request signatures to bypass browser caching (304 Not Modified) for 100% data freshness.
 
-Dynamic ETA: Real-time calculation of remaining time based on average Ethereum block intervals (~12s).
+3. Dynamic ETA: Real-time calculation of remaining time based on average Ethereum block intervals (~12s).
 
-Professional UI: Features a smooth-transition progress meter and detailed confirmation stats.
+4. UI: Features a smooth-transition progress meter and detailed confirmation stats.
 
-🛠️ Technical Implementation
+## 🛠️Technical Implementation
 Distributed System Consistency
 One of the primary challenges was handling Etherscan's load-balanced node architecture. Occasionally, an API request would hit a "lagging" node, causing the confirmation count to temporarily drop.
 
@@ -21,10 +21,10 @@ The Solution: I implemented a Monotonic Progress Logic in the React layer. The a
 Network Efficiency & Rate Limiting
 To ensure the application remains within the Etherscan Free Tier limits while maintaining high responsiveness, I optimized the polling interval to 6 seconds. This "2x block speed" sampling rate maximizes the chance of catching a newly mined block immediately without triggering 429 Rate Limit errors.
 
-📦 Tech Stack
-Frontend: React, TypeScript, Vite
+## 📦 Tech Stack
+**Frontend**: React, TypeScript, Vite
 
-Backend: Node.js, Express, Axios
+**Backend**: Node.js, Express, Axios
 
 Blockchain API: Etherscan (Proxy & RPC modules)
 
