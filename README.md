@@ -30,7 +30,7 @@ To ensure the application remains within the Etherscan Free Tier limits while ma
 
 **Backend**: Node.js, Express, Axios
 
-Blockchain API: Etherscan (Proxy & RPC modules)
+Blockchain API: [Etherscan](https://etherscan.io/myaccount) (Proxy & RPC modules)
 
 ## 🔧 Installation
 1. Clone the repo using this command in your terminal:
