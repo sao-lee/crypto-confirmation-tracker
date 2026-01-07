@@ -16,11 +16,13 @@ A robust, real-time Ethereum monitoring tool that tracks transaction confirmatio
 
 
 **Distributed System Consistency**
+
 One of the primary challenges was handling Etherscan's load-balanced node architecture. Occasionally (or more precisely - often), an API request would hit a "lagging" node, causing the confirmation count to temporarily drop.
 
 The Solution: I implemented a Monotonic Progress Logic in the React layer. The application maintains a "High Water Mark" state, where it only accepts new data if the block confirmation count is strictly greater than the current displayed value.
 
 **Network Efficiency & Rate Limiting**
+
 To ensure the application remains within the Etherscan Free Tier limits while maintaining high responsiveness, I optimized the polling interval to 6 seconds. This "2x block speed" sampling rate maximizes the chance of catching a newly mined block immediately without triggering 429 Rate Limit errors.
 
 ## 📦 Tech Stack
