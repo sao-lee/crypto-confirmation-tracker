@@ -40,7 +40,8 @@ git clone https://github.com/sao-lee/crypto-confirmation-tracker.git
 ```
 2. Setup Backend
 ```python
-cd ../backend
+cd ../backend //changes the directory to the "backend" folder. You must be in this folder and then move to next steps
+
 ```
 _(changes the directory to the "backend" folder. You must be in this folder and then move to next steps)_
 - **cp .env.example .env**  _(Copies the template to a real .env file. This is where you pass your API key that you get from Etherscan)_
