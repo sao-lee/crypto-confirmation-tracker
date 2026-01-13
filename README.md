@@ -1,6 +1,12 @@
 # Ethereum Transaction Confirmation Tracker
 A robust, real-time Ethereum monitoring tool that tracks transaction confirmations with high-precision status updates and dynamic ETA calculations.
 
+## 🎯 The Problem: "Confirmation Anxiety"
+Cryptocurrency users often face "Confirmation Anxiety"—the stressful period between sending a payment and waiting for it to be finalized on-chain. Since different blockchains have varying block times and finality requirements, users are often left wondering if their transaction is stuck, lost, or simply pending.
+
+## The Solution: 
+This tool removes the technical burden from the end-user. Instead of requiring users to understand blockchain finality or manually refresh block explorers, this tracker provides a simplified, real-time visual progress bar. It translates complex "block confirmations" into a familiar, human-readable ETA and status meter.
+
 ## Key Features
 1. Real-Time Monitoring: Automated polling every 6 seconds to capture the fastest available blockchain updates.
 
